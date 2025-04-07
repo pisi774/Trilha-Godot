@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3qvlt3cqpobk"]
+
+[ext_resource type="Texture2D" uid="uid://bpuwmy21sjxrn" path="res://icon.svg" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://p5rktx61cx6f" path="res://player.gd" id="2_epypp"]
+[ext_resource type="Script" uid="uid://cj1j85uc8v2ax" path="res://icon_2.gd" id="3_0hol4"]
+[ext_resource type="Script" uid="uid://e2f77xjpbmtq" path="res://icon_3.gd" id="4_q6r6c"]
+[ext_resource type="Script" uid="uid://dofcs8br3ygam" path="res://icon_4.gd" id="5_q6r6c"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(26, 21)
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(48, 60)
+texture = ExtResource("1_0e48y")
+script = ExtResource("2_epypp")
+
+[node name="Icon2" type="Sprite2D" parent="."]
+position = Vector2(193, 102)
+texture = ExtResource("1_0e48y")
+script = ExtResource("3_0hol4")
+
+[node name="Icon3" type="Sprite2D" parent="."]
+position = Vector2(369, 154)
+rotation = -5.74388
+texture = ExtResource("1_0e48y")
+script = ExtResource("4_q6r6c")
+
+[node name="Icon 4" type="Sprite2D" parent="."]
+position = Vector2(574, 176)
+rotation = -0.359538
+skew = 0.628319
+texture = ExtResource("1_0e48y")
+script = ExtResource("5_q6r6c")
+speed = 100.0

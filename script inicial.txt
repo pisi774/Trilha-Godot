@@ -1,0 +1,19 @@
+extends Sprite2D
+
+func _ready() -> void:
+	print ("oi turma do time de metaverso")
+pass
+
+qual o erro?
+
+func _ready() -> void:
+	print ("oi turma do time de metaverso")
+	pass
+func _process(delta: float) -> void:
+	var input = Input.get_vector("ui_left", "ui_right", "ui_down", "ui_up")
+	position.x = position.x + input.x
+	position.y = position.y + input.y
+	
+	#delta 1 segundo / 60 quadros por segundo
+	#16.6 milisegundos
+	pass
