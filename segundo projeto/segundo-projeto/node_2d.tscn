@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://cxrvpmdoqp0q2"]
+[gd_scene load_steps=6 format=3 uid="uid://cxrvpmdoqp0q2"]
 
+[ext_resource type="Script" uid="uid://pe56chrdehtc" path="res://mundo.gd" id="1_epypp"]
 [ext_resource type="PackedScene" uid="uid://65freqjo7d7x" path="res://objects/caixa.tscn" id="1_wtcfe"]
 [ext_resource type="PackedScene" uid="uid://cmvam22k6alek" path="res://caixa2.tscn" id="2_0e48y"]
 
@@ -12,8 +13,11 @@ size = Vector2(60, 60)
 [node name="Node2D" type="Node2D"]
 position = Vector2(-1, 0)
 
+[node name="Mundo" type="Node" parent="."]
+script = ExtResource("1_epypp")
+
 [node name="RigidBody2D" parent="." instance=ExtResource("1_wtcfe")]
-position = Vector2(-5, 17)
+position = Vector2(86, -105)
 mass = 1.0
 gravity_scale = 1.0
 
@@ -38,9 +42,10 @@ offset_bottom = 644.0
 color = Color(0.313726, 1, 0.533333, 1)
 
 [node name="RigidBody2D2" parent="." instance=ExtResource("1_wtcfe")]
-position = Vector2(519, -45)
+position = Vector2(591, -105)
 
 [node name="RigidBody2D3" type="RigidBody2D" parent="."]
+position = Vector2(-37, -21)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D3"]
 position = Vector2(318, 138)
@@ -54,13 +59,13 @@ offset_bottom = 169.0
 color = Color(0.00155789, 0.000445562, 0.000114123, 1)
 
 [node name="RigidBody2D4" parent="." instance=ExtResource("1_wtcfe")]
-position = Vector2(521, 90)
+position = Vector2(466, 139)
 
 [node name="RigidBody2D5" parent="." instance=ExtResource("2_0e48y")]
-position = Vector2(243, 146)
+position = Vector2(282, -39)
 
 [node name="RigidBody2D6" parent="." instance=ExtResource("1_wtcfe")]
-position = Vector2(235, 330)
+position = Vector2(774, 66)
 
 [node name="RigidBody2D7" parent="." instance=ExtResource("2_0e48y")]
-position = Vector2(88, 154)
+position = Vector2(-76, -12)
