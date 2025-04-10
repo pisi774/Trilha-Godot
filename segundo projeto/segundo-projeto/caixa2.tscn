@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmvam22k6alek"]
+
+[ext_resource type="PackedScene" uid="uid://65freqjo7d7x" path="res://objects/caixa.tscn" id="1_mneb7"]
+
+[node name="RigidBody2D" instance=ExtResource("1_mneb7")]
