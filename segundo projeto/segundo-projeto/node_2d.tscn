@@ -15,6 +15,7 @@ position = Vector2(-1, 0)
 
 [node name="Mundo" type="Node" parent="."]
 script = ExtResource("1_epypp")
+object_templates = Array[PackedScene]([ExtResource("1_wtcfe"), ExtResource("2_0e48y")])
 
 [node name="RigidBody2D" parent="." instance=ExtResource("1_wtcfe")]
 position = Vector2(86, -105)
